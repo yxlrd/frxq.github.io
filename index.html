@@ -258,10 +258,10 @@ var support_linear_float = _getWebGLContext.support_linear_float;
 function getWebGLContext( canvas ) {
 
     var params = {
-        alpha: true,
-        depth: true,
-        stencil: true,
-        antialias: true
+        alpha: false,
+        depth: false,
+        stencil: false,
+        antialias: false
     };
 
     var gl = canvas.getContext( 'webgl2', params );
