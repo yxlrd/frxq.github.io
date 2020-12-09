@@ -591,19 +591,19 @@ function resizeCanvas() {
 }
 
 var count    = 0;
-var colorArr = [ Math.random() + 0.9, Math.random() + 0.9, Math.random() + 0.9 ];
+var colorArr = [ Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2 ];
 
 canvas.addEventListener( 'mousemove', function ( e ) {
 
     count++;
 
-    ( count > 25 ) && (colorArr = [ Math.random() + 0.9, Math.random() + 0.9, Math.random() + 0.9 ], count = 0);
+    ( count > 25 ) && (colorArr = [ Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2 ], count = 0);
 
     pointers[ 0 ].down  = true;
     pointers[ 0 ].color = colorArr;
     pointers[ 0 ].moved = pointers[ 0 ].down;
-    pointers[ 0 ].dx    = (e.offsetX - pointers[ 0 ].x) * 50.0;
-    pointers[ 0 ].dy    = (e.offsetY - pointers[ 0 ].y) * 50.0;
+    pointers[ 0 ].dx    = (e.offsetX - pointers[ 0 ].x) * 10.0;
+    pointers[ 0 ].dy    = (e.offsetY - pointers[ 0 ].y) * 10.0;
     pointers[ 0 ].x     = e.offsetX;
     pointers[ 0 ].y     = e.offsetY;
 
