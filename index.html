@@ -441,7 +441,28 @@ function createDoubleFBO( texId, w, h, internalFormat, format, type, param ) {
     };
 
 }
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Snow</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
 
+	<img src="bg.png" alt="">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+	<script src="jquery.snow.js"></script>
+
+	<script>
+	$(document).ready( function(){
+	    $.fn.snow({ minSize: 5, maxSize: 25, newOn: 500, flakeColor: '#fff' });
+	});
+	</script>
+
+</body>
+</html>
 var blit = function () {
 
     gl.bindBuffer( gl.ARRAY_BUFFER, gl.createBuffer() );
