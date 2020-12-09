@@ -86,20 +86,6 @@ font-family: 'Montserrat', sans-serif;
     }
 }
 </style>
-//snow
-	
-<div class="snowflakes" aria-hidden="true">
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-</div>
 
 <div class="center">
 <center>
@@ -247,7 +233,20 @@ var config = {
     CURL: 30,
     SPLAT_RADIUS: 0.005
 };
-
+//snow
+<div class="snowflakes" aria-hidden="true">
+<div class="snowflake">❅</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❅</div>
+<div class="snowflake">❅</div>
+</div>
+//
 var pointers   = [];
 var splatStack = [];
 
@@ -259,10 +258,10 @@ var support_linear_float = _getWebGLContext.support_linear_float;
 function getWebGLContext( canvas ) {
 
     var params = {
-        alpha: false,
-        depth: false,
-        stencil: false,
-        antialias: false
+        alpha: true,
+        depth: true,
+        stencil: true,
+        antialias: true
     };
 
     var gl = canvas.getContext( 'webgl2', params );
